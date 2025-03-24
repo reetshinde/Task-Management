@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Modal Overlay -->
+  <div class="modal-overlay"></div>
+
+  <div class="container">
+    <h1>Task Manager 📝</h1>
+    
+    <div class="task-input">
+      <input type="text" id="taskName" placeholder="Task Name" required />
+      <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+      <div class="input-row">
+        <button id="addTaskBtn">Add Task</button>
+        <select id="taskFilter" class="filter-dropdown">
+          <option value="all">All Tasks</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="task-list">
+      <h2>Tasks 📌</h2>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+  
+  <!-- Edit Task Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Edit Task ✏️</h2>
+      <input type="text" id="editTaskName" placeholder="New Task Name" required />
+      <textarea id="editTaskDescription" placeholder="New Task Description" required></textarea>
+      <button id="saveEditBtn" class="save-btn">Save Changes</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
