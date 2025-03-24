@@ -28,7 +28,7 @@ A simple, browser-based task management application that allows users to add, ed
 
 1. **Clone or Download** this repository:
    ```bash
-   git clone https://github.com/reetshinde/Task-Management-System.git
+   git clone https://github.com/reetshinde/Task-Management.git
 2. **Open** the index.html file in your browser (e.g., double-click it or drag it into your browser window).
 
 ## Usage
@@ -57,7 +57,7 @@ To host this project using GitHub Pages:
 4. Click **Save**.
 5. GitHub will generate a URL, such as:
    ```bash
-   https://reetshinde.github.io/Task-Management-System/
+   https://reetshinde.github.io/Task-Management/
 6. Share this URL for others to view your live project.
 
 
