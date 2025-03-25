@@ -16,7 +16,8 @@ A simple, browser-based task management application that allows users to add, ed
 - **Add New Tasks**: Enter a task name and description, then click **Add Task**.
 - **Edit Existing Tasks**: Open the edit modal to update task details.
 - **Delete Tasks**: Remove tasks permanently.
-- **Mark Tasks as Complete**: Slash tasks when they are **complete**, Pending tasks show up in the **Task List**.
+- **Mark Tasks as Complete**: Slash tasks when they are **complete**.
+- **Pending/Complete Filter**: Dropdown with All, Pending and Completed tasks to filter out.
 - **Local Storage**: All tasks are saved in the browser’s local storage, so they persist on page reload.
 - **Responsive Design**: The layout is responsive and looks good on various screen sizes.
 - **Dynamic Description**: Task Description box size can be edited by the user.
@@ -36,6 +37,7 @@ A simple, browser-based task management application that allows users to add, ed
 1. **Add a Task**  
    - Enter a **Task Name** and **Task Description**.  
    - Click **Add Task**.
+   - For example: Task Name:**Laundry** and Task Description:**Washing clothes**.
 
 2. **Edit a Task**  
    - Click the **✏️ (Edit)** button next to the task you want to update.  
@@ -46,23 +48,26 @@ A simple, browser-based task management application that allows users to add, ed
 
 4. **Mark as Complete**  
    - Click the **✔️ (Complete)** button to toggle the task status between pending and completed.
-   - 
+
+5. **Filter tasks**
+   - Filter tasks using the dropdown. It is segregated into Pending, Complete and All tasks.
+  
 ## Hosting on GitHub Pages
 
 To host this project using GitHub Pages:
 
-1. **Create a GitHub Repository** (if you haven’t already) and push your project code to it.
+1. **Create a GitHub Repository** and push your project code to it.
 2. In your repository, navigate to **Settings** → **Pages**.
 3. Under **Source**, select the branch (typically `main`) and set the folder to `/root`.
 4. Click **Save**.
 5. GitHub will generate a URL, such as:
    ```bash
    https://reetshinde.github.io/Task-Management/
-6. Share this URL for others to view your live project.
+6. Share this URL to view your live project.
 
 
 ## Navigation
 
 - **Home:** Displays the Task Manager interface with options to add new tasks. The interface is aesthetic and user friendly.
-- **Task List:** Shows all tasks with options to edit, delete, or mark them as complete, and reload them.
+- **Task List:** Shows all tasks with options to edit, delete, or mark them as complete, and reload them. Comes with a functioning filter system for All, Pending and Completed tasks.
 - **Edit Modal:** A popup window for editing task details, which overlays the main interface. User can edit and svae their changes (which is local storage).
