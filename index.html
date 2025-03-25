@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />   <!-- Character encoding for proper text rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />   <!-- Linking external CSS file for styling -->
 </head>
 <body>
   <!-- Modal Overlay -->
   <div class="modal-overlay"></div>
 
-  <div class="container">
+  <div class="container">   <!-- Main container for the task manager -->
     <h1>Task Manager 📝</h1>
     
-    <div class="task-input">
+    <div class="task-input"> <!-- Task Input Section -->
       <input type="text" id="taskName" placeholder="Task Name" required />
       <textarea id="taskDescription" placeholder="Task Description" required></textarea>
       <div class="input-row">
         <button id="addTaskBtn">Add Task</button>
-        <select id="taskFilter" class="filter-dropdown">
+        <select id="taskFilter" class="filter-dropdown"> <!-- Dropdown to filter tasks based on status -->
           <option value="all">All Tasks</option>
           <option value="pending">Pending</option>
           <option value="completed">Completed</option>
@@ -26,9 +26,9 @@
       </div>
     </div>
     
-    <div class="task-list">
+    <div class="task-list"> <!-- Task List Section -->
       <h2>Tasks 📌</h2>
-      <ul id="taskList"></ul>
+      <ul id="taskList"></ul> <!-- Unordered list to display tasks -->
     </div>
   </div>
   
@@ -37,9 +37,9 @@
     <div class="modal-content">
       <span id="closeModal" class="close">&times;</span>
       <h2>Edit Task ✏️</h2>
-      <input type="text" id="editTaskName" placeholder="New Task Name" required />
+      <input type="text" id="editTaskName" placeholder="New Task Name" required /> <!-- Input fields for editing task details -->
       <textarea id="editTaskDescription" placeholder="New Task Description" required></textarea>
-      <button id="saveEditBtn" class="save-btn">Save Changes</button>
+      <button id="saveEditBtn" class="save-btn">Save Changes</button> <!-- Button to save edited task -->
     </div>
   </div>
 
